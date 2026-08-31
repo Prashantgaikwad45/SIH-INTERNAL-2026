@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "PrivacyVision Agent",
+  "version": "1.0.0",
+  "description": "On-Device Visual Perception for Privacy-Preserving Browser Agents (SIH 26171)",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "offscreen",
+    "storage",
+    "tabs",
+    "sidePanel"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background/service-worker.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+        "content/dom-analyzer.js",
+        "content/action-executor.js",
+        "content/content.js"
+      ]
+    }
+  ],
+  "side_panel": {
+    "default_path": "sidepanel/sidepanel.html"
+  },
+  "action": {
+    "default_title": "Open PrivacyVision Side Panel"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';"
+  }
+}

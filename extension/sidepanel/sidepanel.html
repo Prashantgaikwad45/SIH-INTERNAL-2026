@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PrivacyVision</title>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500&family=Google+Sans+Text:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+
+  <!-- Main content area -->
+  <div class="container" id="container">
+
+    <!-- Welcome view -->
+    <div class="welcome" id="welcomeView">
+      <h1 class="greeting">Hello, <span class="name">Aditya</span></h1>
+      <h2 class="subgreeting">Where should we start?</h2>
+
+      <div class="suggestions">
+        <button class="suggestion-pill">
+          <span class="pill-icon">✦</span>
+          <span>What can you do?</span>
+        </button>
+        <button class="suggestion-pill">
+          <span class="pill-icon">🔍</span>
+          <span>Analyze this page for sensitive data</span>
+        </button>
+        <button class="suggestion-pill">
+          <span class="pill-icon">📝</span>
+          <span>Fill this form for me</span>
+          <span class="pill-badge">NEW</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Chat view -->
+    <div class="chat" id="chatView" style="display:none">
+      <div class="messages" id="messages"></div>
+    </div>
+
+  </div>
+
+  <!-- Bottom input -->
+  <div class="bottom-bar">
+    <div class="input-row">
+      <span class="input-plus">+</span>
+      <input type="text" id="userInput" placeholder="Type @ to add tabs">
+      <span class="model-label">Pro <span class="caret">›</span></span>
+      <button class="send-icon" id="sendBtn" disabled>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3.4 20.4l17.45-7.48a1 1 0 000-1.84L3.4 3.6a.993.993 0 00-1.39.91L2 9.12c0 .5.37.93.87.99L17 12 2.87 13.88c-.5.07-.87.5-.87 1l.01 4.61c0 .71.73 1.2 1.39.91z"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Settings overlay -->
+  <div class="settings-overlay" id="settingsOverlay">
+    <div class="settings-modal">
+      <h3>Settings</h3>
+      <label>Server URL</label>
+      <input type="text" id="serverUrl" value="ws://localhost:8000/ws" class="settings-input">
+      <div class="settings-actions">
+        <button id="closeSettings" class="settings-close-btn">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="sidepanel.js"></script>
+</body>
+</html>

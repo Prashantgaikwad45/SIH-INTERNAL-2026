@@ -1,0 +1,145 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Python testing
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# IDE/Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.sublime-project
+*.sublime-workspace
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# Logs
+*.log
+logs/
+
+# Build artifacts
+*.o
+*.a
+*.dylib
+
+# Browser extension build artifacts
+*.crx
+*.pem
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+
+# IDE-specific
+.project
+.pydevproject
+.settings/
+*.iml
+
+# Distribution packages
+*.whl
+
+# Project-specific temporary files
+# Browser extension temporary cache files (.tmp.*.* pattern)
+*.tmp.*
+
+# Model cache directories (Hugging Face transformers, ONNX models)
+.cache/
+cache/
+*/.cache/
+model_cache/
+*.cache
+
+# Python model/pickle files
+*.pkl
+*.pickle
+*.pth
+*.pt
+*.onnx.cache
+
+# Build outputs and bundles (except for tracked bundles)
+dist/
+build/
+
+# esbuild and bundler outputs
+*.bundle.js
+*.bundle.js.map
+
+# Browser extension runtime files
+extension/chrome-storage-*
+extension/sync-*
+extension/*.json.bak
+
+# Server runtime files
+server/.env.local
+server/temp/
+server/tmp/
+server/*.log.bak
+
+# Image/screenshot temp files
+*.bmp.tmp
+*.png.tmp
+*.jpg.tmp
+*.jpeg.tmp
